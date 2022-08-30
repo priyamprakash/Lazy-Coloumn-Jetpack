@@ -50,6 +50,9 @@ class MainActivity : ComponentActivity() {
     }
 }
 
+/***
+ * List View eqivalent
+ */
 @Composable
 fun ScrollableColumnDemo() {
     val scrollState = rememberScrollState()
@@ -66,7 +69,9 @@ fun ScrollableColumnDemo() {
         }
     }
 }
-
+/***
+ * Recycler View eqivalent
+ */
 @Composable
 fun LazyColumnDemo() {
     LazyColumn {
@@ -81,6 +86,7 @@ fun LazyColumnDemo() {
     }
 }
 
+//If nothing is to be returned, return type is Unit
 @Composable
 fun LazyColumnDemo2(selectedItem: (String) -> (Unit)) {
     LazyColumn {
